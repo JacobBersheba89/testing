@@ -41,7 +41,7 @@ button:hover {
 #weatherResult {
     width: 60%;
     margin: 20px auto;
-    padding: 15px;
+    padding: px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -72,3 +72,44 @@ button:hover {
 }
 
 
+#currentWeatherResult {
+    margin: 20px auto;
+    padding: 15px;
+    background-color: white;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 20%; /* Přizpůsob podle preferencí */
+}
+
+
+ #forecastWeatherResult {
+    margin: 20px auto;
+    padding: 15px;
+    background-color: transparent;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 20%; /* Přizpůsob podle preferencí */
+}
+
+
+
+.dayForecast {
+    flex-basis: 18%;
+    margin: 20px;
+    background-color: white;
+    min-width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .dayForecast {
+        flex-basis: 80%; /* Zajistí, že rámečky se zobrazí pod sebou na malých zařízeních */
+    }
+}
